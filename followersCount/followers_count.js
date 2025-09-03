@@ -18,3 +18,6 @@ function checkCountValue() {
   }
 }
 
+function resetCount(){
+    document.getElementById('countDisplay').innerText=0;
+}
