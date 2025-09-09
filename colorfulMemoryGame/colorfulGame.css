@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3498db; /* синій фон */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px); /* 4 колонки */
+    grid-template-rows: repeat(6, 80px);   /* 6 рядків */
+    gap: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.startMain {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: fit-content;
+}
+
+#score, #timer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#startbtn {
+    padding: 10px 20px;
+    background: #3498db;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#startbtn:hover {
+    background: #2980b9;
+}
